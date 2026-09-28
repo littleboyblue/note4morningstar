@@ -7,4 +7,4 @@ binding = "STATS"
 id = "77f4e25f0d4747f3a1751e889c9d78fe"
 
 [vars]
-ALLOWED_ORIGIN = "https://washi.lol"
+ALLOWED_ORIGIN = "https://note.washi.lol"

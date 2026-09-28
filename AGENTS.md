@@ -27,7 +27,7 @@ Static HTML blog with all site CSS/JS in `index.html`; no package manager, build
 
 - `STATS_WORKER_URL` in `index.html` points to `https://blog-stats.washi.lol`.
 - Worker source is `worker/src/index.js`; config is `worker/wrangler.toml`.
-- The Worker exposes `POST /track` and `GET /stats`, stores counts in KV binding `STATS`, and only allows origin `https://washi.lol` via `ALLOWED_ORIGIN`.
+- The Worker exposes `POST /track` and `GET /stats`, stores counts in KV binding `STATS`, and only allows origin `https://note.washi.lol` via `ALLOWED_ORIGIN`.
 
 ## Security Notes
 
