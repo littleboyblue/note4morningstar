@@ -2,6 +2,19 @@
 .DS_Store
 AGENTS.md
 
+# 密钥与凭证（绝不提交）
+.env
+.env.*
+*.local
+worker/.dev.vars
+*.pem
+*.key
+auth.json
+
+# 编辑器
+.idea/
+.vscode/
+
 # Wrangler local cache
 worker/.wrangler/
 
