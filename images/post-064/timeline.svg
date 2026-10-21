@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">2026 年大模型与 Agent 工具演进时间线</text>
+
+  <!-- Month gridlines and labels -->
+  <g font-size="11" fill="#6b7280">
+    <line x1="110" y1="60" x2="110" y2="384" stroke="#eef1f4"/>
+    <line x1="183" y1="60" x2="183" y2="384" stroke="#eef1f4"/>
+    <line x1="256" y1="60" x2="256" y2="384" stroke="#eef1f4"/>
+    <line x1="329" y1="60" x2="329" y2="384" stroke="#eef1f4"/>
+    <line x1="402" y1="60" x2="402" y2="384" stroke="#eef1f4"/>
+    <line x1="475" y1="60" x2="475" y2="384" stroke="#eef1f4"/>
+    <line x1="548" y1="60" x2="548" y2="384" stroke="#eef1f4"/>
+    <line x1="621" y1="60" x2="621" y2="384" stroke="#eef1f4"/>
+    <line x1="694" y1="60" x2="694" y2="384" stroke="#eef1f4"/>
+    <line x1="767" y1="60" x2="767" y2="384" stroke="#eef1f4"/>
+    <text x="110" y="52" text-anchor="middle">1月</text>
+    <text x="183" y="52" text-anchor="middle">2月</text>
+    <text x="256" y="52" text-anchor="middle">3月</text>
+    <text x="329" y="52" text-anchor="middle">4月</text>
+    <text x="402" y="52" text-anchor="middle">5月</text>
+    <text x="475" y="52" text-anchor="middle">6月</text>
+    <text x="548" y="52" text-anchor="middle">7月</text>
+    <text x="621" y="52" text-anchor="middle">8月</text>
+    <text x="694" y="52" text-anchor="middle">9月</text>
+    <text x="767" y="52" text-anchor="middle">10月</text>
+  </g>
+
+  <!-- Lane 1: models -->
+  <line x1="8" y1="110" x2="792" y2="110" stroke="#d7dce2"/>
+  <text x="8" y="114" font-size="13" font-weight="600" fill="#2563eb">模型</text>
+  <g font-size="11" fill="#374151">
+    <circle cx="183" cy="110" r="3.5" fill="#2563eb"/>
+    <text x="183" y="94" text-anchor="middle">Gemini 3.1 Pro</text>
+    <text x="183" y="128" text-anchor="middle">DeepSeek V4</text>
+
+    <circle cx="329" cy="110" r="3.5" fill="#2563eb"/>
+    <text x="329" y="94" text-anchor="middle">GPT-5.5 系列</text>
+    <text x="329" y="128" text-anchor="middle">Opus 4.7</text>
+
+    <circle cx="402" cy="110" r="3.5" fill="#2563eb"/>
+    <text x="402" y="94" text-anchor="middle">Opus 4.8</text>
+    <text x="402" y="128" text-anchor="middle">Gemini 3.5</text>
+
+    <circle cx="475" cy="110" r="3.5" fill="#2563eb"/>
+    <text x="475" y="94" text-anchor="middle">Sonnet 5</text>
+    <text x="475" y="128" text-anchor="middle">GPT-5.6</text>
+
+    <circle cx="621" cy="110" r="3.5" fill="#2563eb"/>
+    <text x="621" y="128" text-anchor="middle">DeepSeek V4-Pro</text>
+
+    <circle cx="694" cy="110" r="3.5" fill="#2563eb"/>
+    <text x="694" y="76" text-anchor="middle">Opus 5.5 / Sonnet 5.5</text>
+    <text x="694" y="94" text-anchor="middle">GPT-6 系列</text>
+    <text x="694" y="144" text-anchor="middle">Gemini 3.8 / V4.1 Flash</text>
+  </g>
+
+  <!-- Lane 2: agent tools -->
+  <line x1="8" y1="210" x2="792" y2="210" stroke="#d7dce2"/>
+  <text x="8" y="214" font-size="13" font-weight="600" fill="#059669">工具</text>
+  <g font-size="11" fill="#374151">
+    <circle cx="110" cy="210" r="3.5" fill="#059669"/>
+    <text x="110" y="192" text-anchor="middle">Skills 跨厂商普及</text>
+
+    <circle cx="256" cy="210" r="3.5" fill="#059669"/>
+    <text x="256" y="192" text-anchor="middle">AGENTS.md 通用化</text>
+
+    <circle cx="402" cy="210" r="3.5" fill="#059669"/>
+    <text x="402" y="192" text-anchor="middle">SDD 方案集中落地</text>
+
+    <circle cx="475" cy="210" r="3.5" fill="#059669"/>
+    <text x="475" y="228" text-anchor="middle">Devin Desktop</text>
+    <text x="475" y="244" text-anchor="middle">多 Agent 编排工具涌现</text>
+
+    <circle cx="694" cy="210" r="3.5" fill="#059669"/>
+    <text x="694" y="176" text-anchor="middle">Copilot 接入第三方 Agent</text>
+    <text x="694" y="192" text-anchor="middle">OpenAI Agents API</text>
+  </g>
+
+  <!-- Lane 3: commercialization -->
+  <line x1="8" y1="310" x2="792" y2="310" stroke="#d7dce2"/>
+  <text x="8" y="314" font-size="13" font-weight="600" fill="#d97706">商业化</text>
+  <g font-size="11" fill="#374151">
+    <circle cx="110" cy="310" r="3.5" fill="#d97706"/>
+    <text x="110" y="292" text-anchor="middle">智谱 MiniMax 港股上市</text>
+
+    <circle cx="256" cy="310" r="3.5" fill="#d97706"/>
+    <text x="256" y="292" text-anchor="middle">OpenAI 估值 $8520 亿</text>
+
+    <circle cx="329" cy="310" r="3.5" fill="#d97706"/>
+    <text x="329" y="328" text-anchor="middle">智谱涨近 6 倍</text>
+
+    <circle cx="402" cy="310" r="3.5" fill="#d97706"/>
+    <text x="402" y="292" text-anchor="middle">Anthropic 估值登顶</text>
+
+    <circle cx="548" cy="310" r="3.5" fill="#d97706"/>
+    <text x="548" y="328" text-anchor="middle">解禁潮股价回调</text>
+
+    <circle cx="694" cy="310" r="3.5" fill="#d97706"/>
+    <text x="694" y="292" text-anchor="middle">Anthropic 传 IPO</text>
+  </g>
+</svg>
