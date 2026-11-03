@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowG" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#10b981"/>
+    </marker>
+    <marker id="arrowV" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#a78bfa"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="400" rx="12" fill="url(#bg)"/>
+
+  <text x="400" y="30" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="700" font-family="system-ui, sans-serif">Super-agent 架构：Router 分派 · Worker 执行 · Watchdog 巡检</text>
+
+  <!-- Trigger sources -->
+  <g filter="url(#shadow)">
+    <rect x="25" y="65" width="145" height="180" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  </g>
+  <text x="97" y="90" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="700" font-family="system-ui, sans-serif">Trigger 事件源</text>
+
+  <rect x="37" y="104" width="121" height="24" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="97" y="120" text-anchor="middle" fill="#cbd5e1" font-size="10" font-family="system-ui, sans-serif">IM 群聊消息</text>
+
+  <rect x="37" y="134" width="121" height="24" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="97" y="150" text-anchor="middle" fill="#cbd5e1" font-size="10" font-family="system-ui, sans-serif">GitHub 评论</text>
+
+  <rect x="37" y="164" width="121" height="24" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="97" y="180" text-anchor="middle" fill="#cbd5e1" font-size="10" font-family="system-ui, sans-serif">CI 构建结果</text>
+
+  <rect x="37" y="194" width="121" height="24" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="97" y="210" text-anchor="middle" fill="#cbd5e1" font-size="10" font-family="system-ui, sans-serif">邮件 / 日程</text>
+
+  <!-- Router -->
+  <g filter="url(#shadow)">
+    <rect x="215" y="95" width="165" height="135" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  </g>
+  <text x="297" y="125" text-anchor="middle" fill="#f59e0b" font-size="13" font-weight="700" font-family="system-ui, sans-serif">Router（常驻）</text>
+  <text x="297" y="150" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif">轻量模型 · 全局上下文</text>
+  <text x="297" y="168" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif">只分派，不执行</text>
+  <text x="297" y="186" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif">可无 Bash 工具</text>
+  <text x="297" y="204" text-anchor="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">快慢两路判断</text>
+
+  <line x1="174" y1="162" x2="208" y2="162" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  <text x="189" y="152" text-anchor="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">Trigger</text>
+
+  <!-- Workers -->
+  <g filter="url(#shadow)">
+    <rect x="445" y="66" width="185" height="52" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.2"/>
+  </g>
+  <text x="537" y="88" text-anchor="middle" fill="#34d399" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Worker 1 · 上下文隔离</text>
+  <text x="537" y="106" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif">最强模型 · 独立 Session</text>
+
+  <g filter="url(#shadow)">
+    <rect x="445" y="122" width="185" height="52" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.2"/>
+  </g>
+  <text x="537" y="144" text-anchor="middle" fill="#34d399" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Worker 2 · 上下文隔离</text>
+  <text x="537" y="162" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif">订阅 Thread · 直通事件</text>
+
+  <g filter="url(#shadow)">
+    <rect x="445" y="178" width="185" height="52" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.2"/>
+  </g>
+  <text x="537" y="200" text-anchor="middle" fill="#34d399" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Worker 3 · 上下文隔离</text>
+  <text x="537" y="218" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif">不直接回复用户</text>
+
+  <line x1="380" y1="148" x2="438" y2="148" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrowG)"/>
+  <text x="409" y="138" text-anchor="middle" fill="#64748b" font-size="9" font-family="system-ui, sans-serif">分派</text>
+
+  <!-- Watchdog -->
+  <g filter="url(#shadow)">
+    <rect x="445" y="270" width="185" height="56" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="1.2"/>
+  </g>
+  <text x="537" y="294" text-anchor="middle" fill="#c4b5fd" font-size="12" font-weight="600" font-family="system-ui, sans-serif">Watchdog 独立会话</text>
+  <text x="537" y="312" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif">定时巡检进展与方向</text>
+
+  <line x1="537" y1="270" x2="537" y2="240" stroke="#a78bfa" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arrowV)"/>
+
+  <!-- Separation band -->
+  <g filter="url(#shadow)">
+    <rect x="25" y="334" width="245" height="54" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="1"/>
+  </g>
+  <text x="147" y="358" text-anchor="middle" fill="#cbd5e1" font-size="12" font-weight="600" font-family="system-ui, sans-serif">云端 · 无状态容器</text>
+  <text x="147" y="376" text-anchor="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">Agent Loop 计算</text>
+
+  <g filter="url(#shadow)">
+    <rect x="278" y="334" width="245" height="54" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="1"/>
+  </g>
+  <text x="400" y="358" text-anchor="middle" fill="#cbd5e1" font-size="12" font-weight="600" font-family="system-ui, sans-serif">会话状态</text>
+  <text x="400" y="376" text-anchor="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">持久化到数据库</text>
+
+  <g filter="url(#shadow)">
+    <rect x="531" y="334" width="244" height="54" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="1"/>
+  </g>
+  <text x="653" y="358" text-anchor="middle" fill="#cbd5e1" font-size="12" font-weight="600" font-family="system-ui, sans-serif">端侧 · 轻量 daemon</text>
+  <text x="653" y="376" text-anchor="middle" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">执行环境 · BYOM</text>
+</svg>
