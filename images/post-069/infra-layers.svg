@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="hot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0c2d48"/>
+      <stop offset="100%" stop-color="#123c5c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" rx="12" fill="url(#bg)"/>
+  <text x="400" y="32" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="700" font-family="system-ui, sans-serif">AI Infra 的五层：把 FLOPS 换算成 token 的那条链</text>
+
+  <rect x="32" y="56" width="736" height="46" rx="8" fill="#162236" stroke="#334155" stroke-width="1"/>
+  <text x="52" y="85" fill="#a5b4fc" font-size="13" font-weight="700" font-family="system-ui, sans-serif">平台与应用层</text>
+  <text x="232" y="85" fill="#cbd5e1" font-size="11" font-family="system-ui, sans-serif">训练平台 · 模型仓库 · 网关 · 评测 · 可观测</text>
+  <text x="748" y="85" text-anchor="end" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">决定「人怎么用、用得起吗」</text>
+
+  <rect x="32" y="112" width="736" height="46" rx="8" fill="url(#hot)" stroke="#38bdf8" stroke-width="2"/>
+  <text x="52" y="141" fill="#38bdf8" font-size="13" font-weight="700" font-family="system-ui, sans-serif">训练 / 推理系统层</text>
+  <text x="232" y="141" fill="#e2e8f0" font-size="11" font-family="system-ui, sans-serif">训练：Megatron / FSDP · 推理引擎：SGLang / vLLM</text>
+  <text x="748" y="141" text-anchor="end" fill="#7dd3fc" font-size="11" font-family="system-ui, sans-serif">决定「一个 token 多少成本」</text>
+
+  <rect x="32" y="168" width="736" height="46" rx="8" fill="#162236" stroke="#334155" stroke-width="1"/>
+  <text x="52" y="197" fill="#a5b4fc" font-size="13" font-weight="700" font-family="system-ui, sans-serif">算子与编译层</text>
+  <text x="232" y="197" fill="#cbd5e1" font-size="11" font-family="system-ui, sans-serif">CUDA / ROCm / Triton · FlashAttention · CUDA Graph</text>
+  <text x="748" y="197" text-anchor="end" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">决定「一张卡能跑出几成力」</text>
+
+  <rect x="32" y="224" width="736" height="46" rx="8" fill="#162236" stroke="#334155" stroke-width="1"/>
+  <text x="52" y="253" fill="#a5b4fc" font-size="13" font-weight="700" font-family="system-ui, sans-serif">资源管理与调度层</text>
+  <text x="232" y="253" fill="#cbd5e1" font-size="11" font-family="system-ui, sans-serif">Kubernetes · Ray · 队列与配额 · 拓扑感知调度</text>
+  <text x="748" y="253" text-anchor="end" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">决定「卡会不会空转」</text>
+
+  <rect x="32" y="280" width="736" height="46" rx="8" fill="#162236" stroke="#334155" stroke-width="1"/>
+  <text x="52" y="309" fill="#a5b4fc" font-size="13" font-weight="700" font-family="system-ui, sans-serif">算力 · 网络 · 存储层</text>
+  <text x="232" y="309" fill="#cbd5e1" font-size="11" font-family="system-ui, sans-serif">GPU / NPU · NVLink / IB / RoCE · 并行文件系统</text>
+  <text x="748" y="309" text-anchor="end" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">决定「模型最大能多大」</text>
+
+  <text x="32" y="360" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">越往下越决定能力上限，越往上越决定成本结构。同一批卡，第 2、3 层换一套实现，</text>
+  <text x="32" y="380" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">吞吐能差出好几倍——这就是「买了卡」和「有了算力」之间的距离。</text>
+</svg>

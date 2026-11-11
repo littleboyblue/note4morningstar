@@ -1677,6 +1677,14 @@
                     excerpt: '按 star 从高到低列出 22 个 2026 年新建、与「AI 把开发/做事门槛压平」相关的工具型项目，逐个简介后，详细拆解前三：纯 Rust 从零重写、500+ 命令全暴露给 Agent 的 photocraft；一周涨 1.5 万星的多 Agent 控制面 t3code；把「反 AI 味」写成三层门禁的 hallmark。后半部分归纳五条规律——仓库多出「给 Agent 看」的一层、迭代以天计、门槛从「会不会写」移到「该不该动、能不能兜底」、长尾细活突然划算、star 只是注意力；附上手清单与三条风险提醒。mygo、android-ad-cleaner、turbo-fieldfare 也在清单内。',
                     category: '行业观察',
                     file: 'posts/2026-11-09_068.md'
+                },
+                {
+                    id: 'post-069',
+                    title: 'Infra 与 SGLang：大模型从「能跑」到「跑得起」的那一层',
+                    date: '2026年11月10日',
+                    excerpt: '把 GPU 换算成 token 的那一层到底在管什么？先讲清 AI Infra 的五层、三堵墙（显存、通信、调度），以及推理为什么必须拆成 prefill 与 decode 两种负载；再拆 SGLang：RadixAttention 把前缀做成树、HiCache 的三级 KV、PD/EPD 分离、cache-aware 路由如何把命中率从单机指标变成集群指标，以及它在 MoE、RL、国产卡上的适配。附六个坑与场景选型开关表。',
+                    category: 'AI 基础设施',
+                    file: 'posts/2026-11-10_069.md'
                 }
             ]
         };
