@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="hit" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#123c5c"/>
+      <stop offset="100%" stop-color="#0c2d48"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" rx="12" fill="url(#bg)"/>
+  <text x="400" y="30" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="700" font-family="system-ui, sans-serif">世界模型的四个层级：从「看起来像」到「能拿来算」</text>
+
+  <text x="40" y="54" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">层级 / 输出</text>
+  <text x="300" y="54" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">代表</text>
+  <text x="520" y="54" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">它能回答的问题</text>
+
+  <rect x="24" y="66" width="752" height="58" rx="8" fill="url(#hit)" stroke="#38bdf8" stroke-width="2"/>
+  <text x="40" y="92" fill="#38bdf8" font-size="12.5" font-weight="700" font-family="system-ui, sans-serif">显式 3D / 物理仿真</text>
+  <text x="40" y="112" fill="#94a3b8" font-size="10.5" font-family="system-ui, sans-serif">输出：几何 + 物理量</text>
+  <text x="300" y="92" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">物理引擎</text>
+  <text x="300" y="112" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">Cosmos 类神经仿真</text>
+  <text x="520" y="92" fill="#e2e8f0" font-size="10.5" font-family="system-ui, sans-serif">这样摆会不会撞、会不会倒？</text>
+
+  <rect x="24" y="132" width="752" height="58" rx="8" fill="#162236" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="40" y="158" fill="#22d3ee" font-size="12.5" font-weight="700" font-family="system-ui, sans-serif">隐空间世界模型</text>
+  <text x="40" y="178" fill="#94a3b8" font-size="10.5" font-family="system-ui, sans-serif">输出：latent state</text>
+  <text x="300" y="158" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">JEPA / V-JEPA 2</text>
+  <text x="300" y="178" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">Dreamer 系列</text>
+  <text x="520" y="158" fill="#e2e8f0" font-size="10.5" font-family="system-ui, sans-serif">这条路走下去，有没有收益？</text>
+
+  <rect x="24" y="198" width="752" height="58" rx="8" fill="#162236" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="40" y="224" fill="#818cf8" font-size="12.5" font-weight="700" font-family="system-ui, sans-serif">交互式世界模型</text>
+  <text x="40" y="244" fill="#94a3b8" font-size="10.5" font-family="system-ui, sans-serif">输出：像素 + 动作条件</text>
+  <text x="300" y="224" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">Genie 系列</text>
+  <text x="300" y="244" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">实时 20–60 fps</text>
+  <text x="520" y="224" fill="#e2e8f0" font-size="10.5" font-family="system-ui, sans-serif">按下这个键，下一秒看到什么？</text>
+
+  <rect x="24" y="264" width="752" height="58" rx="8" fill="#162236" stroke="#475569" stroke-width="1.5"/>
+  <text x="40" y="290" fill="#94a3b8" font-size="12.5" font-weight="700" font-family="system-ui, sans-serif">视频生成</text>
+  <text x="40" y="310" fill="#64748b" font-size="10.5" font-family="system-ui, sans-serif">输出：像素</text>
+  <text x="300" y="290" fill="#94a3b8" font-size="10.5" font-family="system-ui, sans-serif">Sora 类</text>
+  <text x="300" y="310" fill="#94a3b8" font-size="10.5" font-family="system-ui, sans-serif">离线、成片</text>
+  <text x="520" y="290" fill="#94a3b8" font-size="10.5" font-family="system-ui, sans-serif">这个镜头看起来像不像？</text>
+
+  <text x="24" y="352" fill="#cbd5e1" font-size="11" font-family="system-ui, sans-serif">越往上，越接近「能拿来训练或评估策略」；越往下，越通用、越像内容工具。</text>
+  <text x="24" y="374" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">四层不是替代关系，而是四种工具——硬要一把锤子敲所有钉子，才是这个领域最常见的浪费。</text>
+</svg>

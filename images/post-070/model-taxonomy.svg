@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="hot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#123c5c"/>
+      <stop offset="100%" stop-color="#0c2d48"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="420" rx="12" fill="url(#bg)"/>
+  <text x="400" y="32" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="700" font-family="system-ui, sans-serif">同一套底座，四种词表</text>
+
+  <rect x="24" y="50" width="752" height="40" rx="8" fill="#162236" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="75" text-anchor="middle" fill="#94a3b8" font-size="11.5" font-family="system-ui, sans-serif">共享底座：Transformer · 大规模预训练 · Scaling Law · 后训练 / RL · 蒸馏</text>
+
+  <rect x="24" y="106" width="176" height="180" rx="8" fill="#162236" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="40" y="132" fill="#38bdf8" font-size="13" font-weight="700" font-family="system-ui, sans-serif">常规大模型 LLM</text>
+  <text x="40" y="154" fill="#e2e8f0" font-size="10.5" font-family="system-ui, sans-serif">输出：词</text>
+  <line x1="40" y1="166" x2="184" y2="166" stroke="#334155" stroke-width="1"/>
+  <text x="40" y="188" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">在文本词表上做下一 token</text>
+  <text x="40" y="206" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">预测，把世界压进语言。</text>
+  <text x="40" y="224" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">开环：错了重写。</text>
+  <text x="40" y="252" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">数据：10¹³ token</text>
+
+  <rect x="216" y="106" width="176" height="180" rx="8" fill="#162236" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="232" y="132" fill="#818cf8" font-size="13" font-weight="700" font-family="system-ui, sans-serif">多模态模型</text>
+  <text x="232" y="154" fill="#e2e8f0" font-size="10.5" font-family="system-ui, sans-serif">输出：词 + 像素</text>
+  <line x1="232" y1="166" x2="376" y2="166" stroke="#334155" stroke-width="1"/>
+  <text x="232" y="188" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">VLM 把图像翻成视觉 token，</text>
+  <text x="232" y="206" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">生成模型直接预测像素。</text>
+  <text x="232" y="224" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">开环：错了重问 / 重画。</text>
+  <text x="232" y="252" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">数据：10⁹ 图文对</text>
+
+  <rect x="408" y="106" width="176" height="180" rx="8" fill="url(#hot)" stroke="#22d3ee" stroke-width="2"/>
+  <text x="424" y="132" fill="#22d3ee" font-size="13" font-weight="700" font-family="system-ui, sans-serif">VLA 模型</text>
+  <text x="424" y="154" fill="#e2e8f0" font-size="10.5" font-family="system-ui, sans-serif">输出：动作序列</text>
+  <line x1="424" y1="166" x2="568" y2="166" stroke="#334155" stroke-width="1"/>
+  <text x="424" y="188" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">视觉 + 指令 → 动作 chunk，</text>
+  <text x="424" y="206" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">10–100 Hz 闭环执行。</text>
+  <text x="424" y="224" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">错了会摔，不可回滚。</text>
+  <text x="424" y="252" fill="#7dd3fc" font-size="10" font-family="system-ui, sans-serif">数据：10⁴–10⁶ 条轨迹</text>
+
+  <rect x="600" y="106" width="176" height="180" rx="8" fill="#162236" stroke="#f472b6" stroke-width="1.5"/>
+  <text x="616" y="132" fill="#f472b6" font-size="13" font-weight="700" font-family="system-ui, sans-serif">世界模型</text>
+  <text x="616" y="154" fill="#e2e8f0" font-size="10.5" font-family="system-ui, sans-serif">输出：下一状态</text>
+  <line x1="616" y1="166" x2="760" y2="166" stroke="#334155" stroke-width="1"/>
+  <text x="616" y="188" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">给定观测与动作，预测</text>
+  <text x="616" y="206" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">下一秒的世界，供规划、</text>
+  <text x="616" y="224" fill="#cbd5e1" font-size="10.5" font-family="system-ui, sans-serif">评估与策略训练。</text>
+  <text x="616" y="252" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">数据：10⁶–10⁸ 视频</text>
+
+  <text x="24" y="322" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">开环：输出给人看</text>
+  <rect x="160" y="312" width="480" height="12" rx="6" fill="url(#spectrum)" opacity="0.85"/>
+  <text x="776" y="322" text-anchor="end" fill="#f9a8d4" font-size="11" font-family="system-ui, sans-serif">闭环：输出给机器执行</text>
+
+  <text x="24" y="356" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">四类模型共享同一套底座，差别在词表、老师与闭环。越往右，数据越贵、</text>
+  <text x="24" y="376" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">评测越难、错误代价越高——但也就越接近「能干活」。</text>
+  <text x="24" y="400" fill="#64748b" font-size="10.5" font-family="system-ui, sans-serif">注：数据量为公开资料的数量级估算，不同工作口径差异很大，不作精确比较。</text>
+</svg>

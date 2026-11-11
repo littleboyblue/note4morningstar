@@ -1685,6 +1685,14 @@
                     excerpt: '把 GPU 换算成 token 的那一层到底在管什么？先讲清 AI Infra 的五层、三堵墙（显存、通信、调度），以及推理为什么必须拆成 prefill 与 decode 两种负载；再拆 SGLang：RadixAttention 把前缀做成树、HiCache 的三级 KV、PD/EPD 分离、cache-aware 路由如何把命中率从单机指标变成集群指标，以及它在 MoE、RL、国产卡上的适配。附六个坑与场景选型开关表。',
                     category: 'AI 基础设施',
                     file: 'posts/2026-11-10_069.md'
+                },
+                {
+                    id: 'post-070',
+                    title: '大模型不止一种：LLM、VLA、世界模型，各自在预测什么',
+                    date: '2026年11月11日',
+                    excerpt: '把常规 LLM、多模态、VLA、世界模型放进同一张坐标系：它们的差别不在参数量，而在输出空间（词表）、监督信号（老师）与是否闭环（错了会不会被放大）。附四类模型对照表、VLA 的三层频率、世界模型的四个层级，以及一份「你的问题该用哪类模型」的选型清单。',
+                    category: 'AI 前沿',
+                    file: 'posts/2026-11-11_070.md'
                 }
             ]
         };
