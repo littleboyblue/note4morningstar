@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <defs>
+    <linearGradient id="bg71" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="f1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="f2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="f3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="f4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="f5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#db2777"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <marker id="down71" markerWidth="8" markerHeight="6" refX="4" refY="6" orient="auto">
+      <polygon points="0 0, 8 0, 4 6" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="420" rx="12" fill="url(#bg71)"/>
+  <text x="400" y="34" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="700" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">从 token 到利润：每一层都在漏</text>
+  <text x="400" y="58" text-anchor="middle" fill="#94a3b8" font-size="10.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">账单只记录最上面一层，利润只在最下面一层</text>
+
+  <!-- Row 1 -->
+  <text x="24" y="110" fill="#e2e8f0" font-size="12" font-weight="700" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">总 token 消耗</text>
+  <text x="24" y="127" fill="#64748b" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">所有调用、所有轮次</text>
+  <rect x="220" y="92" width="360" height="44" rx="7" fill="url(#f1)" opacity="0.92"/>
+  <text x="568" y="120" text-anchor="end" fill="#0f172a" font-size="13" font-weight="700" font-family="system-ui, sans-serif">100%</text>
+  <text x="620" y="120" fill="#94a3b8" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">起点：每一次调用都计费</text>
+
+  <line x1="400" y1="138" x2="400" y2="146" stroke="#475569" stroke-width="1.4" marker-end="url(#down71)"/>
+
+  <!-- Row 2 -->
+  <text x="24" y="168" fill="#e2e8f0" font-size="12" font-weight="700" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">有效推理 token</text>
+  <text x="24" y="185" fill="#64748b" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">真正推进任务的消耗</text>
+  <rect x="250" y="150" width="300" height="44" rx="7" fill="url(#f2)" opacity="0.92"/>
+  <text x="538" y="178" text-anchor="end" fill="#0f172a" font-size="13" font-weight="700" font-family="system-ui, sans-serif">≈65%</text>
+  <text x="620" y="178" fill="#94a3b8" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">漏损① 上下文重发、缓存未命中</text>
+
+  <line x1="400" y1="196" x2="400" y2="204" stroke="#475569" stroke-width="1.4" marker-end="url(#down71)"/>
+
+  <!-- Row 3 -->
+  <text x="24" y="226" fill="#e2e8f0" font-size="12" font-weight="700" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">一次通过的任务</text>
+  <text x="24" y="243" fill="#64748b" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">没有重做、没有返工</text>
+  <rect x="280" y="208" width="240" height="44" rx="7" fill="url(#f3)" opacity="0.92"/>
+  <text x="508" y="236" text-anchor="end" fill="#0f172a" font-size="13" font-weight="700" font-family="system-ui, sans-serif">≈40%</text>
+  <text x="620" y="236" fill="#94a3b8" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">漏损② 失败重试、无效工具调用</text>
+
+  <line x1="400" y1="254" x2="400" y2="262" stroke="#475569" stroke-width="1.4" marker-end="url(#down71)"/>
+
+  <!-- Row 4 -->
+  <text x="24" y="284" fill="#e2e8f0" font-size="12" font-weight="700" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">被验收的交付</text>
+  <text x="24" y="301" fill="#64748b" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">客户/业务真正签字</text>
+  <rect x="310" y="266" width="180" height="44" rx="7" fill="url(#f4)" opacity="0.92"/>
+  <text x="478" y="294" text-anchor="end" fill="#0f172a" font-size="13" font-weight="700" font-family="system-ui, sans-serif">≈28%</text>
+  <text x="620" y="294" fill="#94a3b8" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">漏损③ 人工复核、返工、兜底</text>
+
+  <line x1="400" y1="312" x2="400" y2="320" stroke="#475569" stroke-width="1.4" marker-end="url(#down71)"/>
+
+  <!-- Row 5 -->
+  <text x="24" y="342" fill="#e2e8f0" font-size="12" font-weight="700" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">可计入毛利的价值</text>
+  <text x="24" y="359" fill="#64748b" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">扣完成本后剩下的</text>
+  <rect x="340" y="324" width="120" height="44" rx="7" fill="url(#f5)" opacity="0.92"/>
+  <text x="448" y="352" text-anchor="end" fill="#0f172a" font-size="13" font-weight="700" font-family="system-ui, sans-serif">≈12%</text>
+  <text x="620" y="352" fill="#94a3b8" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">漏损④ 定价让渡、固定成本分摊</text>
+
+  <line x1="24" y1="382" x2="776" y2="382" stroke="#334155" stroke-width="1"/>
+  <text x="24" y="402" fill="#64748b" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">比例仅示意，不同业务差异很大；关键不是这几个数，而是每一层的转化率能不能被单独测量。</text>
+</svg>

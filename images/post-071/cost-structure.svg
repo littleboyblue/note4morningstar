@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380">
+  <defs>
+    <linearGradient id="bg71b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="380" rx="12" fill="url(#bg71b)"/>
+  <text x="400" y="34" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="700" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">成本结构翻转：人力是台阶，推理是斜坡</text>
+  <text x="400" y="56" text-anchor="middle" fill="#94a3b8" font-size="10.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">同样的交付量，两种完全不同的成本曲线</text>
+
+  <!-- Left panel -->
+  <rect x="40" y="80" width="350" height="230" rx="10" fill="#162236" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="108" fill="#38bdf8" font-size="12.5" font-weight="700" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">人力成本：固定 + 阶梯</text>
+  <text x="60" y="126" fill="#94a3b8" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">工资按月发，产能按编制跳档</text>
+
+  <!-- grid -->
+  <line x1="70" y1="150" x2="360" y2="150" stroke="#1e293b" stroke-width="1"/>
+  <line x1="70" y1="190" x2="360" y2="190" stroke="#1e293b" stroke-width="1"/>
+  <line x1="70" y1="230" x2="360" y2="230" stroke="#1e293b" stroke-width="1"/>
+  <line x1="70" y1="270" x2="360" y2="270" stroke="#334155" stroke-width="1"/>
+  <line x1="70" y1="130" x2="70" y2="270" stroke="#334155" stroke-width="1"/>
+
+  <path d="M70 250 L140 250 L140 220 L210 220 L210 185 L280 185 L280 150 L350 150 L350 270 L70 270 Z" fill="#38bdf8" opacity="0.08"/>
+  <path d="M70 250 L140 250 L140 220 L210 220 L210 185 L280 185 L280 150 L350 150" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linejoin="round"/>
+  <circle cx="140" cy="250" r="3" fill="#38bdf8"/>
+  <circle cx="140" cy="220" r="3" fill="#38bdf8"/>
+  <circle cx="210" cy="220" r="3" fill="#38bdf8"/>
+  <circle cx="210" cy="185" r="3" fill="#38bdf8"/>
+  <circle cx="280" cy="185" r="3" fill="#38bdf8"/>
+  <circle cx="280" cy="150" r="3" fill="#38bdf8"/>
+
+  <text x="146" y="214" fill="#7dd3fc" font-size="8.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">扩编</text>
+  <text x="216" y="179" fill="#7dd3fc" font-size="8.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">再扩编</text>
+  <text x="326" y="286" text-anchor="end" fill="#64748b" font-size="9" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">交付量 →</text>
+  <text x="58" y="138" fill="#64748b" font-size="9" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">成本 ↑</text>
+
+  <!-- Divider -->
+  <circle cx="400" cy="194" r="13" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="400" y="198" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="system-ui, sans-serif">vs</text>
+
+  <!-- Right panel -->
+  <rect x="410" y="80" width="350" height="230" rx="10" fill="#162236" stroke="#334155" stroke-width="1"/>
+  <text x="430" y="108" fill="#f472b6" font-size="12.5" font-weight="700" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">AI 成本：变动 + 线性</text>
+  <text x="430" y="126" fill="#94a3b8" font-size="9.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">每调用一次，就多一笔支出</text>
+
+  <!-- grid -->
+  <line x1="440" y1="150" x2="730" y2="150" stroke="#1e293b" stroke-width="1"/>
+  <line x1="440" y1="190" x2="730" y2="190" stroke="#1e293b" stroke-width="1"/>
+  <line x1="440" y1="230" x2="730" y2="230" stroke="#1e293b" stroke-width="1"/>
+  <line x1="440" y1="270" x2="730" y2="270" stroke="#334155" stroke-width="1"/>
+  <line x1="440" y1="130" x2="440" y2="270" stroke="#334155" stroke-width="1"/>
+
+  <path d="M440 255 L720 140 L720 270 L440 270 Z" fill="#f472b6" opacity="0.08"/>
+  <path d="M440 255 L720 140" fill="none" stroke="#f472b6" stroke-width="2.2"/>
+  <circle cx="440" cy="255" r="3" fill="#f472b6"/>
+  <circle cx="720" cy="140" r="3" fill="#f472b6"/>
+
+  <text x="452" y="232" fill="#f9a8d4" font-size="8.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">低用量时看起来便宜</text>
+  <text x="696" y="286" text-anchor="end" fill="#64748b" font-size="9" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">调用量 →</text>
+  <text x="428" y="138" fill="#64748b" font-size="9" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">成本 ↑</text>
+
+  <line x1="40" y1="332" x2="760" y2="332" stroke="#334155" stroke-width="1"/>
+  <text x="40" y="354" fill="#cbd5e1" font-size="10.5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">人力看利用率，AI 看单位任务成本；成本结构变了，利润的杠杆也变了。</text>
+  <text x="40" y="372" fill="#64748b" font-size="9" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">示意：假设人力不因用量即时增减；实际差异取决于单价、任务结构与利用率。</text>
+</svg>
